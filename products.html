@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Products</title>
+    </head>
+
+    <body>
+        <h1>Welcome To Our Online Jewellery Store</h1>
+        <div id="filter">
+            <button onclick="showCart()">View Your Cart</button>
+            <p>You can sort your items here</p>
+            <label for="">By Brand:</label>
+            <select name="" id="brand">
+                <option value="Anjali">Anjali</option>
+                <option value="PcChandra">P.C.Chandra</option>
+                <option value="SecnoGold">SecnoGold</option>
+            </select>
+            <br>
+            <label for="">By Price Range:</label>
+            <select name="" id="price">
+                <option value="5000-10000">5000-10000</option>
+                <option value="10000-15000">10000-15000</option>
+                <option value="15000-20000">15000-20000</option>
+            </select>
+        </div>
+        <div class="btn">
+            <button onclick="sortLH()">Price: Low to High</button><br>
+            <button onclick="sortHL()">Price: High to Low</button>
+        </div>
+        <div id="data"></div>
+    </body>
+
+</html>
+<script src="products.js"></script>
